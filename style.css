@@ -148,3 +148,7 @@ input.disabled {
 footer{
     height: var(--footer);
 }
+
+.fa-heart{
+    color: rgb(187, 0, 0);
+}
