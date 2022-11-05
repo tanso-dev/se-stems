@@ -6,20 +6,28 @@
     vertical-align: baseline;
     background: transparent;
 }
+:root{
+	--footer: 4rem;
+	--main: calc(100vh - var(--footer));
+}
 body{
+    
     background-color: #fffce8;
     font-family: 'Spectral', serif;
     font-size: 18px;
     position: relative;
     min-height: 100vh;
 }
+.text-center{
+    text-align: center;
+}
 .body-container{
     width: 80%;
     margin: auto;
     margin-top: 1rem;
     text-align: center;
-    height: auto;
-    margin-bottom: 4rem;
+    min-height:var(--main);
+    padding-bottom: 2rem;
 }
 
 .add-stem-button{
@@ -137,4 +145,7 @@ button:disabled{
 
 input.disabled {
     pointer-events:none;
+}
+footer{
+    height: var(--footer);
 }
