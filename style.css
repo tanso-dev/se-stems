@@ -7,8 +7,8 @@
     background: transparent;
 }
 :root{
-	--footer: 4rem;
-	--main: calc(100vh - var(--footer));
+	--footer: 3rem;
+	--main: calc(100vh - var(--footer) );
 }
 body{
     
@@ -16,7 +16,6 @@ body{
     font-family: 'Spectral', serif;
     font-size: 18px;
     position: relative;
-    min-height: 100vh;
 }
 .text-center{
     text-align: center;
@@ -24,9 +23,9 @@ body{
 .body-container{
     width: 80%;
     margin: auto;
-    margin-top: 1rem;
+    padding-top: 1rem;
     text-align: center;
-    min-height:var(--main);
+    min-height:calc(var(--main) - 3rem);
     padding-bottom: 2rem;
 }
 
