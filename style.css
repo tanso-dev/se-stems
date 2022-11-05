@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+body{
+    background-color: #fffce8;
+    font-family: 'Spectral', serif;
+    font-size: 18px;
+    position: relative;
+    min-height: 100vh;
+}
+.body-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.add-stem-button{
+    background-color: rgb(187, 0, 0,.6);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    border: 3px solid rgba(187, 0, 0, 0.2);
+    font-family: inherit;
+}
+.add-stem-button:focus{
+    border-color: rgba(187, 0, 0, 1);
+}
+.stem{
+    background-color: rgba(0,0,0, .05);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    text-align: left;
+    /* box-shadow: 5px 5px 1px rgba(0,0,0, .1); */
+}
+
+
+label{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.bolded-label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+input{
+    background-color: white;
+    border: 2px solid rgba(0,0,0,.1);
+    padding: .5rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+#stemStart{
+    margin-bottom: 2rem;
+    width: 60%;
+    min-width: auto;
+    font-size: 1.2rem;
+}
+
+.stem input{
+    width: 100%;
+}
+
+input:focus{
+    border-color:rgb(187, 0, 0);
+}
+
+#timer{
+    position: sticky;
+    text-align: center;
+    background-color: rgba(187, 0, 0, 0.6);
+    width: auto;
+    display: inline-block;
+    left: 100%;
+    top: 1rem;
+    padding: .5rem 2.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    align-self: flex-start;
+}
+#timer-text{
+    display: block;
+    font-size: .8rem;
+}
+
+kbd{
+    background-color: #fdfdfd;
+    border: 2px solid rgba(0,0,0, .2);
+    border-radius: .3rem;
+    box-shadow: 1px 1px 2px rgba(0,0,0, .05);
+    padding: .35rem .7rem;
+    font-size: 1rem;
+}
+
+.instructions{
+    line-height: 2.5;
+}
+
+.red{
+    color: rgba(187, 0, 0, 0.6);
+}
+button{
+    color:rgba(187, 0, 0, 0.6);
+    transform: scale(.9);
+    transition: all .1s;
+}
+button.stem-add{
+    display: none;
+}
+button.stem-add.active{
+    display:inline-block;
+}
+button:hover, button:focus{
+    color: rgba(187, 0, 0, 1);
+    cursor: pointer;
+    transform: scale(1);
+}
+button:active{
+    transform: scale(.8);
+}
+button:disabled{
+    color:rgba(0,0,0, .2);
+}
+
+input.disabled {
+    pointer-events:none;
+}

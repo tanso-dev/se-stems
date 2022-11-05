@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Pillars: Sentence Stems</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/ce2594e773.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="body-container">
+        <div id="timer">
+            <span id="timer-text">TIME</span>
+            <span id="timer-count">3:00</span>
+        </div>
+        <h1>Six Pillars of Self-Esteem: Sentence Stems</h1>
+        <p class="instructions">Type the beginning stem and hit <kbd>Enter</kbd> to lock it in. You've got five minutes to write. Let it flow.<br />Click the <i class="fa-sharp fa-solid fa-circle-plus red"></i> button below or hit <kbd>Tab</kbd> > <kbd>Enter</kbd> after you finish a stem to create a new one.</p>
+        <br />
+        <br />
+        <label class="bolded-label" for="stem-start">Beginning Stem:</label>
+        <input type="text" id="stemStart" name="stem-start" placeholder="If I accept my feelings more...">
+        <div class="flex-container-v stem-container">
+            <!--THIS IS GOING TO BE THE AREAS FOR THE STEMS-->
+            <!--
+            <div class="flex-item-v stem">
+                <label for ="stem1">If I accept my feelings more...</label>
+                <input type="text" name="stem1" id="stem1">
+            </div>
+
+            <div class="flex-item-v stem">
+                <label for ="stem2">If I accept my feelings more...</label>
+                <input type="text" name="stem2" id="stem2">
+            </div>
+            -->
+
+        </div>
+        
+        <button class="stem-add"><i class="fa-sharp fa-solid fa-4x fa-circle-plus"></i></button>
+        <!--
+        <button id="add-stem" class="add-stem-button">Add Stem</button>
+        -->
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
