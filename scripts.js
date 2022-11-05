@@ -3,14 +3,11 @@ const stemContainer = document.querySelector('.stem-container');
 const addStemBtn = document.querySelector('.stem-add');
 
 const timer = document.querySelector('#timer-count');
-const startingMins = .5;
+const startingMins = 3;
 let time = startingMins * 60;
 let refreshInterval;
 
-console.log(stemStart);
-console.log(stemContainer);
-console.log(addStemBtn);
-console.log(timer);
+
 
 //add enter functionality for first stem
 //add stem addition functionality for the addStemBtn
@@ -68,16 +65,6 @@ function addStem(){
 
     let addedStem = document.querySelector(`input[for="${stemName}"]`);
     addedStem.focus();
-
-    
-
-    /*
-    sleep(2000);
-    addedStem.addEventListener('keypress', function(e){
-        if(e.key==='Enter');
-        addStem();
-    });
-    */
 }
 
 stemStart.addEventListener('keypress', function (e){
